@@ -12,6 +12,6 @@ return array(
     ),
 
     //定界符
-//    'TMPL_L_DELIM'=>'<{',
-//    'TMPL_R_DELIM'=>'}>',
+    'TMPL_L_DELIM'=>'<{',
+    'TMPL_R_DELIM'=>'}>',
 );
