@@ -1,0 +1,30 @@
+<extend name="Public/base"/>
+<block name="style"></block>
+<block name="body">
+    <!-- 主体 -->
+    <table class="table table-striped" >
+        <thead>
+        <tr>
+            <th >系统信息</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <volist name="info" id="v">
+            <tr>
+                <td class="text">{$key}：</td>
+                <td class="input">{$v}</td>
+            </tr>
+            <tr>
+                <td class="text">{$key}：</td>
+                <td class="input">{$v}</td>
+            </tr>
+            <tr>
+                <td class="text">{$key}：</td>
+                <td class="input">{$v}</td>
+            </tr>
+        </volist>
+        </tbody>
+    </table>
+</block>
+<block name="script"></block>
