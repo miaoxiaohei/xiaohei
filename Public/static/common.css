@@ -61,3 +61,20 @@ footer {
     padding: 0 0 10px;
     text-align: center;
 }
+
+/* ======================index==================== */
+
+.container p{
+    max-width: 720px;
+}
+.container p img{
+    width:720px;
+    height:300px;
+}
+
+.jumbotron{
+    background-color: #fff;
+}
+.jumbotron p{
+    font-size:16px;
+}

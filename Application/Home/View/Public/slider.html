@@ -1,5 +1,5 @@
 <!-- To move inline styles to css file/block, please specify a class name for each element. -->
-<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 960px;height: 480px; background: #191919; overflow: hidden;">
+<div id="slider1_container" style="position: relative; top: 0px;  MARGIN-RIGHT: auto; MARGIN-LEFT: auto; width: 960px;height: 480px; background: #191919; overflow: hidden;">
 
     <!-- Loading Screen -->
     <div u="loading" style="position: absolute; top: 0px; left: 0px;">
@@ -10,7 +10,7 @@
     </div>
 
     <!-- Slides Container -->
-    <div u="slides" style="cursor: move; position: absolute; left: 240px; top: 0px; width: 720px; height: 480px; overflow: hidden;">
+    <div u="slides" style="cursor: move; position: absolute; left: 180px; top: 0px; width: 800px; height: 480px; overflow: hidden;">
         <div>
             <img u="image" src="__STATIC__/slider/images/01.jpg" />
             <img u="thumb" src="__STATIC__/slider/images/thumb-01.jpg" />
@@ -70,6 +70,7 @@
     <!--#endregion Arrow Navigator Skin End -->
     <!--#region Thumbnail Navigator Skin Begin -->
     <!-- Help: http://www.jssor.com/development/slider-with-thumbnail-navigator-jquery.html -->
+
     <style>
         /* jssor slider thumbnail navigator skin 02 css */
         /*
@@ -82,7 +83,7 @@
         .jssort02 {
             position: absolute;
             /* size of thumbnail navigator container */
-            width: 240px;
+            width: 180px;
             height: 480px;
         }
 
@@ -90,8 +91,8 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 99px;
-            height: 66px;
+            width: 160px;
+            height: 100px;
         }
 
         .jssort02 .t {
@@ -115,8 +116,8 @@
             position: absolute;
             top: 0px;
             left: 0px;
-            width: 95px;
-            height: 62px;
+            width: 156px;
+            height: 98px;
             border: #000 2px solid;
             box-sizing: content-box;
             background: url(__STATIC__/slider/images/t01.png) -800px -800px no-repeat;
@@ -128,8 +129,8 @@
             _top: 0px;
             left: 2px;
             _left: 0px;
-            width: 95px;
-            height: 62px;
+            width: 156px;
+            height: 98px;
             border: #000 0px solid;
             _border: #fff 2px solid;
             background-position: 50% 50%;
@@ -138,24 +139,24 @@
         .jssort02 .p:hover .c {
             top: 0px;
             left: 0px;
-            width: 97px;
-            height: 64px;
+            width: 156px;
+            height: 98px;
             border: #fff 1px solid;
             background-position: 50% 50%;
         }
 
         .jssort02 .p.pdn .c {
             background-position: 50% 50%;
-            width: 95px;
-            height: 62px;
+            width: 156px;
+            height: 98px;
             border: #000 2px solid;
         }
 
-        /** html .jssort02 .c, * html .jssort02 .pdn .c, * html .jssort02 .pav .c {*/
+        * html .jssort02 .c, * html .jssort02 .pdn .c, * html .jssort02 .pav .c {
             /* ie quirks mode adjust */
-            /*width : 99px;*/
-            /*height : 66px;*/
-        /*}*/
+            width /**/: 156px;
+            height /**/: 98px;
+        }
     </style>
 
     <!-- thumbnail navigator container -->
@@ -168,4 +169,5 @@
             </div>
         </div>
         <!-- Thumbnail Item Skin End -->
+    </div>
     </div>
