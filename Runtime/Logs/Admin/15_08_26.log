@@ -1,0 +1,9 @@
+[ 2015-08-26T17:46:40+08:00 ] ::1 /xiaohei/xiaohei/admin.php/Admin/Editor
+ERR: 无法加载控制器:Admin
+
+[ 2015-08-26T17:48:13+08:00 ] ::1 /xiaohei/xiaohei/admin.php/Admin/Editor/addNews
+ERR: 无法加载控制器:Admin
+
+[ 2015-08-26T17:49:05+08:00 ] ::1 /xiaohei/xiaohei/admin.php/Admin/Editor/addNews
+ERR: 无法加载控制器:Admin
+

@@ -1,0 +1,15 @@
+<extend name="Public/base"/>
+<block name="style">    </block>
+<block name="body">
+    <h1>新闻发布器</h1>
+    <script id="editor" type="text/plain" name="content" style="width:1024px;height:500px;"></script>
+</block>
+<block name="script">
+    <js href="__STATIC__/ueditor/ueditor.config.js" />
+    <js href="__STATIC__/ueditor/ueditor.all.min.js" />
+<script>
+$(function(){
+    var ue = UE.getEditor('editor',{serverUrl :'<{:U('Admin/Editor/ueditor')}>'});
+});
+</script>
+</block>

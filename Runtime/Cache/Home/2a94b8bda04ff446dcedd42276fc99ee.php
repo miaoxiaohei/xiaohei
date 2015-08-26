@@ -70,8 +70,11 @@
     </div><!-- /.container-fluid -->
 </nav>
 
-<!--轮播-->
-<!-- To move inline styles to css file/block, please specify a class name for each element. -->
+
+<!-- 身体 -->
+
+    <!--轮播-->
+    <!-- To move inline styles to css file/block, please specify a class name for each element. -->
 <div id="slider1_container" style="position: relative; top: 0px;  MARGIN-RIGHT: auto; MARGIN-LEFT: auto; width: 960px;height: 480px; background: #191919; overflow: hidden;">
 
     <!-- Loading Screen -->
@@ -244,9 +247,7 @@
         <!-- Thumbnail Item Skin End -->
     </div>
     </div>
-<!--/轮播-->
-<!-- 身体 -->
-
+    <!--/轮播-->
     <!-- 主体 -->
     <!--<table class="table table-striped" >
         <thead>
@@ -274,14 +275,48 @@
     <div class="col-xs-6 col-md-3">-->
         <div class="jumbotron">
             <div class="container">
-                <h2>VR周边网站即将上线!<span class="label label-success label">New</span></h2>
-                <p style="color:#666">2015-5-10 12:23:20</p>
-                <p><img src="/xiaohei/xiaohei/Public/static/slider/images/01.jpg"></p>
-                <p>　　VR（Virtual Reality，即虚拟现实，简称VR），是由美国VPL公司创建人拉尼尔（Jaron Lanier）在20世纪80年代初提出的。
-                其具体内涵是：综合利用计算机图形系统和各种现实及控制等接口设备，在计算机上生成的、可交互的三维环境中提供沉浸感觉的技术。
-                其中，计算机生成的、可交互的三维环境成为虚拟环境（即Virtual Environment，简称VE）。
-                虚拟现实技术实现的载体是虚拟现实仿真平台，即（Virtual Reality Platform，简称VRP）。</p>
-                <p><a class="btn btn-success" href="#" role="button">阅读更多..</a></p>
+                <div class="row">
+                    <div class="col-md-9">
+
+                        <h2>VR周边网站即将上线!<span class="label label-success">New</span></h2>
+                        <p style="color:#666">2015-5-10 12:23:20</p>
+                        <p><img src="/xiaohei/xiaohei/Public/static/slider/images/01.jpg"></p>
+                        <p>　　VR（Virtual Reality，即虚拟现实，简称VR），是由美国VPL公司创建人拉尼尔（Jaron Lanier）在20世纪80年代初提出的。
+                            其具体内涵是：综合利用计算机图形系统和各种现实及控制等接口设备，在计算机上生成的、可交互的三维环境中提供沉浸感觉的技术。
+                            其中，计算机生成的、可交互的三维环境成为虚拟环境（即Virtual Environment，简称VE）。
+                            虚拟现实技术实现的载体是虚拟现实仿真平台，即（Virtual Reality Platform，简称VRP）。</p>
+                        <p><a class="btn btn-success" href="#" role="button">阅读更多..</a></p>
+
+                     </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">国内资讯</div>
+                            <div class="panel-body">
+                                VR周边网站即将上线!
+                            </div>
+                        </div>
+                        <div class="panel panel-success">
+                            <div class="panel-heading">国外资讯</div>
+                            <div class="panel-body">
+                                VR墨西哥体验店正式营业
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-9">
+                        <h2>VR周边网站即将上线!</h2>
+                        <p style="color:#666">2015-5-10 12:23:20</p>
+                        <p><img src="/xiaohei/xiaohei/Public/static/slider/images/01.jpg"></p>
+                        <p>　　VR（Virtual Reality，即虚拟现实，简称VR），是由美国VPL公司创建人拉尼尔（Jaron Lanier）在20世纪80年代初提出的。
+                            其具体内涵是：综合利用计算机图形系统和各种现实及控制等接口设备，在计算机上生成的、可交互的三维环境中提供沉浸感觉的技术。
+                            其中，计算机生成的、可交互的三维环境成为虚拟环境（即Virtual Environment，简称VE）。
+                            虚拟现实技术实现的载体是虚拟现实仿真平台，即（Virtual Reality Platform，简称VRP）。</p>
+                        <p><a class="btn btn-success" href="#" role="button">阅读更多..</a></p>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -308,106 +343,109 @@
 <script src="/xiaohei/xiaohei/Public/static/jquery/jquery-1.11.3.min.js"></script>
 <script src="/xiaohei/xiaohei/Public/static/bootstrap/js/bootstrap.min.js"></script>
 <script src="/xiaohei/xiaohei/Public/static/common.js"></script>
-<!-- 轮播 -->
-<script src="/xiaohei/xiaohei/Public/static/slider/js/jssor.js"></script>
-<script  src="/xiaohei/xiaohei/Public/static/slider/js/jssor.slider.min.js"></script>
 
 
-<script>
-    /* 轮播插件 初始化 */
-    jQuery(document).ready(function ($) {
+
+
+    <!-- 轮播 -->
+    <script src="/xiaohei/xiaohei/Public/static/slider/js/jssor.js"></script>
+    <script  src="/xiaohei/xiaohei/Public/static/slider/js/jssor.slider.min.js"></script>
+
+
+    <script>
+        /* 轮播插件 初始化 */
+        jQuery(document).ready(function ($) {
 //        var options = { $AutoPlay: true };
 //        var jssor_slider1 = new $JssorSlider$('slider1_container', options);
 //        return;
-        var _SlideshowTransitions = [
-            //Zoom- in
-            {$Duration: 1200, $Zoom: 1, $Easing: { $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseOutQuad }, $Opacity: 2 },
-            //Zoom+ out
-            {$Duration: 1000, $Zoom: 11, $SlideOut: true, $Easing: { $Zoom: $JssorEasing$.$EaseInExpo, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 },
-            //Rotate Zoom- in
-            {$Duration: 1200, $Zoom: 1, $Rotate: 1, $During: { $Zoom: [0.2, 0.8], $Rotate: [0.2, 0.8] }, $Easing: { $Zoom: $JssorEasing$.$EaseSwing, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseSwing }, $Opacity: 2, $Round: { $Rotate: 0.5} },
-            //Rotate Zoom+ out
-            {$Duration: 1000, $Zoom: 11, $Rotate: 1, $SlideOut: true, $Easing: { $Zoom: $JssorEasing$.$EaseInExpo, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInExpo }, $Opacity: 2, $Round: { $Rotate: 0.8} },
+            var _SlideshowTransitions = [
+                //Zoom- in
+                {$Duration: 1200, $Zoom: 1, $Easing: { $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseOutQuad }, $Opacity: 2 },
+                //Zoom+ out
+                {$Duration: 1000, $Zoom: 11, $SlideOut: true, $Easing: { $Zoom: $JssorEasing$.$EaseInExpo, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 },
+                //Rotate Zoom- in
+                {$Duration: 1200, $Zoom: 1, $Rotate: 1, $During: { $Zoom: [0.2, 0.8], $Rotate: [0.2, 0.8] }, $Easing: { $Zoom: $JssorEasing$.$EaseSwing, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseSwing }, $Opacity: 2, $Round: { $Rotate: 0.5} },
+                //Rotate Zoom+ out
+                {$Duration: 1000, $Zoom: 11, $Rotate: 1, $SlideOut: true, $Easing: { $Zoom: $JssorEasing$.$EaseInExpo, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInExpo }, $Opacity: 2, $Round: { $Rotate: 0.8} },
 
-            //Zoom HDouble- in
-            {$Duration: 1200, x: 0.5, $Cols: 2, $Zoom: 1, $Assembly: 2049, $ChessMode: { $Column: 15 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 },
-            //Zoom HDouble+ out
-            {$Duration: 1200, x: 4, $Cols: 2, $Zoom: 11, $SlideOut: true, $Assembly: 2049, $ChessMode: { $Column: 15 }, $Easing: { $Left: $JssorEasing$.$EaseInExpo, $Zoom: $JssorEasing$.$EaseInExpo, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 },
+                //Zoom HDouble- in
+                {$Duration: 1200, x: 0.5, $Cols: 2, $Zoom: 1, $Assembly: 2049, $ChessMode: { $Column: 15 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 },
+                //Zoom HDouble+ out
+                {$Duration: 1200, x: 4, $Cols: 2, $Zoom: 11, $SlideOut: true, $Assembly: 2049, $ChessMode: { $Column: 15 }, $Easing: { $Left: $JssorEasing$.$EaseInExpo, $Zoom: $JssorEasing$.$EaseInExpo, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 },
 
-            //Rotate Zoom- in L
-            {$Duration: 1200, x: 0.6, $Zoom: 1, $Rotate: 1, $During: { $Left: [0.2, 0.8], $Zoom: [0.2, 0.8], $Rotate: [0.2, 0.8] }, $Easing: { $Left: $JssorEasing$.$EaseSwing, $Zoom: $JssorEasing$.$EaseSwing, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseSwing }, $Opacity: 2, $Round: { $Rotate: 0.5} },
-            //Rotate Zoom+ out R
-            {$Duration: 1000, x: -4, $Zoom: 11, $Rotate: 1, $SlideOut: true, $Easing: { $Left: $JssorEasing$.$EaseInExpo, $Zoom: $JssorEasing$.$EaseInExpo, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInExpo }, $Opacity: 2, $Round: { $Rotate: 0.8} },
-            //Rotate Zoom- in R
-            {$Duration: 1200, x: -0.6, $Zoom: 1, $Rotate: 1, $During: { $Left: [0.2, 0.8], $Zoom: [0.2, 0.8], $Rotate: [0.2, 0.8] }, $Easing: { $Left: $JssorEasing$.$EaseSwing, $Zoom: $JssorEasing$.$EaseSwing, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseSwing }, $Opacity: 2, $Round: { $Rotate: 0.5} },
-            //Rotate Zoom+ out L
-            {$Duration: 1000, x: 4, $Zoom: 11, $Rotate: 1, $SlideOut: true, $Easing: { $Left: $JssorEasing$.$EaseInExpo, $Zoom: $JssorEasing$.$EaseInExpo, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInExpo }, $Opacity: 2, $Round: { $Rotate: 0.8} },
+                //Rotate Zoom- in L
+                {$Duration: 1200, x: 0.6, $Zoom: 1, $Rotate: 1, $During: { $Left: [0.2, 0.8], $Zoom: [0.2, 0.8], $Rotate: [0.2, 0.8] }, $Easing: { $Left: $JssorEasing$.$EaseSwing, $Zoom: $JssorEasing$.$EaseSwing, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseSwing }, $Opacity: 2, $Round: { $Rotate: 0.5} },
+                //Rotate Zoom+ out R
+                {$Duration: 1000, x: -4, $Zoom: 11, $Rotate: 1, $SlideOut: true, $Easing: { $Left: $JssorEasing$.$EaseInExpo, $Zoom: $JssorEasing$.$EaseInExpo, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInExpo }, $Opacity: 2, $Round: { $Rotate: 0.8} },
+                //Rotate Zoom- in R
+                {$Duration: 1200, x: -0.6, $Zoom: 1, $Rotate: 1, $During: { $Left: [0.2, 0.8], $Zoom: [0.2, 0.8], $Rotate: [0.2, 0.8] }, $Easing: { $Left: $JssorEasing$.$EaseSwing, $Zoom: $JssorEasing$.$EaseSwing, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseSwing }, $Opacity: 2, $Round: { $Rotate: 0.5} },
+                //Rotate Zoom+ out L
+                {$Duration: 1000, x: 4, $Zoom: 11, $Rotate: 1, $SlideOut: true, $Easing: { $Left: $JssorEasing$.$EaseInExpo, $Zoom: $JssorEasing$.$EaseInExpo, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInExpo }, $Opacity: 2, $Round: { $Rotate: 0.8} },
 
-            //Rotate HDouble- in
-            {$Duration: 1200, x: 0.5, y: 0.3, $Cols: 2, $Zoom: 1, $Rotate: 1, $Assembly: 2049, $ChessMode: { $Column: 15 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseOutQuad, $Rotate: $JssorEasing$.$EaseInCubic }, $Opacity: 2, $Round: { $Rotate: 0.7} },
-            //Rotate HDouble- out
-            {$Duration: 1000, x: 0.5, y: 0.3, $Cols: 2, $Zoom: 1, $Rotate: 1, $SlideOut: true, $Assembly: 2049, $ChessMode: { $Column: 15 }, $Easing: { $Left: $JssorEasing$.$EaseInExpo, $Top: $JssorEasing$.$EaseInExpo, $Zoom: $JssorEasing$.$EaseInExpo, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInExpo }, $Opacity: 2, $Round: { $Rotate: 0.7} },
-            //Rotate VFork in
-            {$Duration: 1200, x: -4, y: 2, $Rows: 2, $Zoom: 11, $Rotate: 1, $Assembly: 2049, $ChessMode: { $Row: 28 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseOutQuad, $Rotate: $JssorEasing$.$EaseInCubic }, $Opacity: 2, $Round: { $Rotate: 0.7} },
-            //Rotate HFork in
-            {$Duration: 1200, x: 1, y: 2, $Cols: 2, $Zoom: 11, $Rotate: 1, $Assembly: 2049, $ChessMode: { $Column: 19 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseOutQuad, $Rotate: $JssorEasing$.$EaseInCubic }, $Opacity: 2, $Round: { $Rotate: 0.8} }
-        ];
+                //Rotate HDouble- in
+                {$Duration: 1200, x: 0.5, y: 0.3, $Cols: 2, $Zoom: 1, $Rotate: 1, $Assembly: 2049, $ChessMode: { $Column: 15 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseOutQuad, $Rotate: $JssorEasing$.$EaseInCubic }, $Opacity: 2, $Round: { $Rotate: 0.7} },
+                //Rotate HDouble- out
+                {$Duration: 1000, x: 0.5, y: 0.3, $Cols: 2, $Zoom: 1, $Rotate: 1, $SlideOut: true, $Assembly: 2049, $ChessMode: { $Column: 15 }, $Easing: { $Left: $JssorEasing$.$EaseInExpo, $Top: $JssorEasing$.$EaseInExpo, $Zoom: $JssorEasing$.$EaseInExpo, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInExpo }, $Opacity: 2, $Round: { $Rotate: 0.7} },
+                //Rotate VFork in
+                {$Duration: 1200, x: -4, y: 2, $Rows: 2, $Zoom: 11, $Rotate: 1, $Assembly: 2049, $ChessMode: { $Row: 28 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseOutQuad, $Rotate: $JssorEasing$.$EaseInCubic }, $Opacity: 2, $Round: { $Rotate: 0.7} },
+                //Rotate HFork in
+                {$Duration: 1200, x: 1, y: 2, $Cols: 2, $Zoom: 11, $Rotate: 1, $Assembly: 2049, $ChessMode: { $Column: 19 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseOutQuad, $Rotate: $JssorEasing$.$EaseInCubic }, $Opacity: 2, $Round: { $Rotate: 0.8} }
+            ];
 
-        var options = {
-            $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
-            $AutoPlayInterval: 1500,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
-            $PauseOnHover: 1,                                //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+            var options = {
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlayInterval: 1500,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                                //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
 
-            $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
-            $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
-            $SlideDuration: 600,                                //Specifies default duration (swipe) for slide in milliseconds
+                $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideDuration: 600,                                //Specifies default duration (swipe) for slide in milliseconds
 
-            $SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
-                $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
-                $Transitions: _SlideshowTransitions,            //[Required] An array of slideshow transitions to play slideshow
-                $TransitionsOrder: 1,                           //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
-                $ShowLink: true                                    //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
-            },
+                $SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
+                    $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
+                    $Transitions: _SlideshowTransitions,            //[Required] An array of slideshow transitions to play slideshow
+                    $TransitionsOrder: 1,                           //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
+                    $ShowLink: true                                    //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
+                },
 
-            $ArrowNavigatorOptions: {                       //[Optional] Options to specify and enable arrow navigator or not
-                $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
-                $ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
-                $AutoCenter: 2,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
-                $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
-            },
+                $ArrowNavigatorOptions: {                       //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 2,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+                },
 
-            $ThumbnailNavigatorOptions: {                       //[Optional] Options to specify and enable thumbnail navigator or not
-                $Class: $JssorThumbnailNavigator$,              //[Required] Class to create thumbnail navigator instance
-                $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                $ThumbnailNavigatorOptions: {                       //[Optional] Options to specify and enable thumbnail navigator or not
+                    $Class: $JssorThumbnailNavigator$,              //[Required] Class to create thumbnail navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
 
-                $ActionMode: 1,                                 //[Optional] 0 None, 1 act by click, 2 act by mouse hover, 3 both, default value is 1
-                $Lanes: 1,                                      //[Optional] Specify lanes to arrange thumbnails, default value is 1 多少列
-                $SpacingX: 14,                                   //[Optional] Horizontal space between each thumbnail in pixel, default value is 0
-                $SpacingY: 12,                                   //[Optional] Vertical space between each thumbnail in pixel, default value is 0
-                $DisplayPieces: 4,                             //[Optional] Number of pieces to display, default value is 1 左边多少个
-                $ParkingPosition: 156,                          //[Optional] The offset position to park thumbnail
-                $Orientation: 2                               //[Optional] Orientation to arrange thumbnails, 1 horizental, 2 vertical, default value is 1
+                    $ActionMode: 1,                                 //[Optional] 0 None, 1 act by click, 2 act by mouse hover, 3 both, default value is 1
+                    $Lanes: 1,                                      //[Optional] Specify lanes to arrange thumbnails, default value is 1 多少列
+                    $SpacingX: 14,                                   //[Optional] Horizontal space between each thumbnail in pixel, default value is 0
+                    $SpacingY: 12,                                   //[Optional] Vertical space between each thumbnail in pixel, default value is 0
+                    $DisplayPieces: 4,                             //[Optional] Number of pieces to display, default value is 1 左边多少个
+                    $ParkingPosition: 156,                          //[Optional] The offset position to park thumbnail
+                    $Orientation: 2                               //[Optional] Orientation to arrange thumbnails, 1 horizental, 2 vertical, default value is 1
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                if (parentWidth)
+                    jssor_slider1.$ScaleWidth(Math.max(Math.min(parentWidth, 1080), 300));
+                else
+                    window.setTimeout(ScaleSlider, 30);
             }
-        };
-
-        var jssor_slider1 = new $JssorSlider$("slider1_container", options);
-        //responsive code begin
-        //you can remove responsive code if you don't want the slider scales while window resizes
-        function ScaleSlider() {
-            var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
-            if (parentWidth)
-                jssor_slider1.$ScaleWidth(Math.max(Math.min(parentWidth, 1080), 300));
-            else
-                window.setTimeout(ScaleSlider, 30);
-        }
-        ScaleSlider();
-        $(window).bind("load", ScaleSlider);
-        $(window).bind("resize", ScaleSlider);
-        $(window).bind("orientationchange", ScaleSlider);
-        //responsive code end
-    });
-</script>
-
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
 
 
 </body>
