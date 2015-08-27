@@ -60,6 +60,18 @@ class Html extends TagLib{
             case 'KINDEDITOR':
                 $parseStr   =  '<script type="text/javascript" src="__ROOT__/Public/Js/KindEditor/kindeditor.js"></script><script type="text/javascript"> KE.show({ id : \''.$id.'\'  ,urlType : "absolute"});</script><textarea id="'.$id.'" style="'.$style.'" name="'.$name.'" >'.$content.'</textarea>';
                 break;
+            case 'UEDITOR':
+                $parseStr   =  "\n".'<script type="text/javascript" charset="utf-8" src="__ROOT__/Public/static/ueditor/ueditor.config.js"></script>'."\n".'<script type="text/javascript" charset="utf-8" src="__ROOT__/Public/static/ueditor/ueditor.all.js"></script>'."\n".'<script type="text/plain" id="'.$id.'" name="'.$name.'" style="'.$style.'">'.$content.'</script>'."\n".'<script type="text/javascript">var ue_'.$id.' = UE.getEditor("'.$id.'");</script>'."\n";
+                break;
+            case 'UEDITORMULTI':
+                $parseStr   =  "\n".'<script type="text/plain" id="'.$id.'" name="'.$name.'" style="'.$style.'">'.$content.'</script>'."\n".'<script type="text/javascript">var editor_'.$id.' = new baidu.editor.ui.Editor();editor_'.$id.'.render("'.$id.'");</script>'."\n";
+                break;
+            case 'MINI':
+                $parseStr   =  "\n".'<script type="text/javascript" charset="utf-8" src="__ROOT__/Public/static/ueditor/ueditor.config.js"></script>'."\n".'<script type="text/javascript" charset="utf-8" src="__ROOT__/Public/static/ueditor/ueditor.all.js"></script>'."\n".'<link rel="stylesheet" type="text/css" href="__ROOT__/Public/static/ueditor/themes/default/css/ueditor.css"/>'."\n".'<textarea id="'.$id.'" name="'.$name.'" style="'.$style.'">'.$content.'</textarea>'."\n".'<script type="text/javascript">var editorOption = {minFrameHeight:175,toolbars:[[\'Undo\', \'Redo\',\'|\', \'bold\', \'italic\', \'underline\',\'forecolor\',\'backcolor\',\'fontfamily\',\'fontsize\' ]],autoClearinitialContent:true,wordCount:false, elementPathEnabled:false};var editor_'.$id.' = new baidu.editor.ui.Editor(editorOption);editor_'.$id.'.render("'.$id.'");</script>'."\n";
+                break;
+            case 'MINIMULTI':
+                $parseStr   =  "\n".'<link rel="stylesheet" type="text/css" href="__ROOT__/Public/static/ueditor/themes/default/css/ueditor.css"/>'."\n".'<textarea id="'.$id.'" name="'.$name.'" style="'.$style.'">'.$content.'</textarea>'."\n".'<script type="text/javascript">var editorOption = {minFrameHeight:200,toolbars:[[\'Undo\', \'Redo\',\'|\', \'bold\', \'italic\', \'underline\',\'forecolor\',\'backcolor\',\'fontfamily\',\'fontsize\' ]],autoClearinitialContent:false,wordCount:false, elementPathEnabled:false};var editor_'.$id.' = new baidu.editor.ui.Editor(editorOption);editor_'.$id.'.render("'.$id.'");</script>'."\n";
+                break;
             default :
                 $parseStr  =  '<textarea id="'.$id.'" style="'.$style.'" name="'.$name.'" >'.$content.'</textarea>';
         }

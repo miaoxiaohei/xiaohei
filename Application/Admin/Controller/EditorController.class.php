@@ -1,6 +1,6 @@
 <?php
 namespace Admin\Controller;
-use Think\Controller;
+use Common\Controller\CommonController;
 class EditorController extends CommonController {
     public function index(){
         $this->display();
@@ -10,8 +10,4 @@ class EditorController extends CommonController {
         $this->display();
     }
 
-    public function ueditor(){
-        $data = new \Org\Util\Ueditor();
-        echo $data->output();
-    }
 }

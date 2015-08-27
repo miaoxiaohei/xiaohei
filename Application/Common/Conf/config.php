@@ -12,7 +12,7 @@ return array(
 //    'DB_PREFIX'             =>  'admin_',    // 数据库表前缀
 //    'DB_FIELDTYPE_CHECK'    =>  false,       // 是否进行字段类型检查
     //页面调试
-     'SHOW_PAGE_TRACE' => true,
+//     'SHOW_PAGE_TRACE' => true,
 
     'URL_HTML_SUFFIX'       =>  '',  // URL伪静态后缀设置
 

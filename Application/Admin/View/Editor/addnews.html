@@ -1,15 +1,21 @@
 <extend name="Public/base"/>
-<block name="style">    </block>
+<block name="style">
+    <taglib name="html" />
+    <script>
+        window.UEDITOR_HOME_URL = "__STATIC__/ueditor/";//编辑器项目路径
+    </script>
+</block>
 <block name="body">
     <h1>新闻发布器</h1>
-    <script id="editor" type="text/plain" name="content" style="width:1024px;height:500px;"></script>
+    <html:editor id="info" name="info" type="UEDITOR" ><{$info.info}></html:editor>
 </block>
 <block name="script">
-    <js href="__STATIC__/ueditor/ueditor.config.js" />
-    <js href="__STATIC__/ueditor/ueditor.all.min.js" />
+
 <script>
+
 $(function(){
-    var ue = UE.getEditor('editor',{serverUrl :'<{:U('Admin/Editor/ueditor')}>'});
+
 });
 </script>
 </block>
+
